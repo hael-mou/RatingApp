@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RatingApp</string>
+    <string name="give_feedback">Give Feedback</string>
+    <string name="Very_Good">Very Good</string>
+    <string name="Excellent">Excellent</string>
+    <string name="good">Good</string>
+    <string name="Fair">Fair</string>
+    <string name="Poor">Poor</string>
+    <string name="rate_the_service">Rate The Service</string>
+    <string name="todo">TODO</string>
+    <string name="pff">~~</string>
+    <string name="thanks_you">thanks you !!</string>
+
+
+</resources>

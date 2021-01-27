@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundapp"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/heroImage"
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="95dp"
+        android:layout_alignParentStart="true"
+        tools:srcCompat="@drawable/hero1"
+        android:contentDescription="@string/todo" />
+    <LinearLayout
+        android:id="@+id/layout_stars"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/heroImage"
+        android:background="@drawable/b_layout"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/rate_the_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/amita"
+            android:text="@string/rate_the_service"
+            android:textAlignment="center"
+            android:textSize="27sp" />
+
+        <RatingBar
+            android:id="@+id/Stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="1"
+            />
+
+        <TextView
+            android:id="@+id/starsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bilbo_swash_caps"
+            android:text="@string/good"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_thanks"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/heroImage"
+        android:background="@drawable/b_layout"
+        android:orientation="vertical"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/bonbon"
+            android:text="@string/thanks_you"
+            android:textAlignment="center"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/color3"
+            android:textSize="33sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_below="@id/layout_stars"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/b_button"
+        android:onClick="clicker"
+        android:text="@string/give_feedback"
+        android:textColor="@color/color3"
+        android:textSize="26sp" />
+</RelativeLayout>
